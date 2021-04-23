@@ -1,9 +1,15 @@
 import Vue from "vue";
 import App from "./App.vue";
 import "../packages/theme/src/index.css";
-import { ElButton } from "../packages/index";
+import LView from "../packages/index";
+import ElementUI from "element-ui";
+import "element-ui/lib/theme-chalk/index.css";
 Vue.config.productionTip = false;
-Vue.use(ElButton);
+
+Vue.use(ElementUI);
+Vue.use(LView);
+// Vue.use(LLogin);
+// Vue.use(LLayout);
 new Vue({
   render: (h) => h(App),
 }).$mount("#app");
